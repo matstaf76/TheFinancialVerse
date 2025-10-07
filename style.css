@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Bangers', cursive;
+  font-family: 'Permanent Marker', cursive;
   background-color: #1a1a1a;
   color: #f5f5f5;
   line-height: 1.6;
@@ -19,7 +19,7 @@ header h1 {
 }
 
 .tagline {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Bangers', cursive;
   font-size: 1.5rem;
   margin-top: 0.5rem;
 }
