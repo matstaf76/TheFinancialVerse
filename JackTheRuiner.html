@@ -7,20 +7,50 @@
         body { font-family: Arial, sans-serif; background-color: #f0f0f0; text-align: center; }
         h1 { color: #800000; }
         p { font-size: 18px; max-width: 600px; margin: 0 auto; }
+        /* Gallery styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        h2 { font-family: 'Bangers', cursive; color: #800000; margin-top: 40px; }
     </style>
     <link rel="stylesheet" href="style.css" />
 
-  <!-- Secure Google Fonts link -->
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Bangers&display=swap" rel="stylesheet">
+    <!-- Secure Google Fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Bangers&display=swap" rel="stylesheet">
 
-  <!-- Recommended security meta tags -->
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- Recommended security meta tags -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 </head>
 <body>
     <h1>Meet Jack the Ruiner!</h1>
-    <p>Jack the Ruiner is a foggy slasher in a dark coat with a bloody ledger. He ruins fun trips by adding secret charges and can even release swarms of Ancillary Aliens to pile on more tricks!</p>
+    <p>Jack the Ruiner is a shady fiend that can't figure out how to make more money honestly. He ruins fun events and trips by price gouging, adding secret fees, upcharges and he can even release swarms of Ancillary Aliens or even unleash ATM the Barbarian to pile on more tricks!</p>
     <h2>What He Represents in Real Life</h2>
-    <p>In real life, Jack the Ruiner is like hidden resort or cleaning fees. Think of booking a hotel for $200 a night, but then they add $20 more for "cleaning" or "resort fun" you didn't ask for. It's like paying extra for toys you don't use! Always read the full price before a trip to stop him. Jack the Ruiner also ruins your trip with "trapped market price gouging." This is when you are charged an absurd price for items that are cheap outside of the business you are at. This is when you are at an amusement park and you pay $10 for a $1 bottle of water. You are trapped and are price gouged. That drains the money you had for fun! Jack the Ruiner Strikes!</p>
+    <p>In real life, Jack the Ruiner represents all "trapped pricing" price gouging schemes, hidden resort, cleaning fees or upcharges that you have no choice but to pay. Think of booking a hotel for $200 a night, but then they add $20 more for "cleaning" or "resort fun" you didn't ask for. It's like paying extra for toys you don't use! Always read the full price before a trip to stop him. Jack the Ruiner also ruins your trip with "trapped market price gouging." This is when you are charged an absurd price for items that are cheap outside of the business you are at. This is when you are at an amusement park and you pay $10 for a $1 bottle of water. You are trapped and are price gouged. That drains the money you had for fun potentially ruining your good time! Jack the Ruiner Strikes!</p>
+
+    <!-- Gallery Section -->
+    <h2>Jack the Ruiner's Tricks</h2>
+    <div class="gallery">
+       <img src="images/JacktheRuinerAlleys.jpg" alt="Hidden Resort Fees">
+        <img src="images/JacktheRuinerStalksAtAmusementPark.jpg" alt="Price Gouging">
+        <img src="images/JacktheRuiner.jpg" alt="Overpriced Water">
+        <img src="images/JackRuinerAndAncillaryAliens.jpg" alt="Ancillary Upcharges">
+    </div>
 </body>
 </html>
