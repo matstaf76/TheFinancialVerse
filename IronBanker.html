@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The IronBanker — Market Snapshot</title>
+  <title>The IronBanker</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,40 +54,6 @@
       line-height: 1;
       display: inline-block;
     }
-
-    .snapshot {
-      background: var(--card);
-      padding: 24px;
-      border-radius: 14px;
-      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
-      width: 100%;
-      max-width: 360px;
-    }
-
-    .snapshot h2 {
-      margin: 0 0 12px 0;
-      font-size: 1.15rem;
-    }
-
-    .market-list {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .market {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      border-radius: 10px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
-    }
-
-    .sym { font-weight: 700; }
-    .muted { color: var(--muted); font-size: 12px; }
-    .chg.up { color: #7ef79d; }
-    .chg.down { color: #ff8b8b; }
 
     .image-link {
       margin-top: 8px;
@@ -151,7 +117,6 @@
 
     @media (max-width: 420px) {
       h1 { font-size: 2rem; padding: 6px 8px; }
-      .snapshot { padding: 18px; }
     }
   </style>
 </head>
@@ -175,57 +140,8 @@
       <a href="BasicsofBanking.html">The Basics of Banking</a>
       <a href="YouNeedaBankAccount.html">You Need Your Own Bank Account</a>
     </div>
-
-    <div class="snapshot" role="region" aria-label="Market Snapshot">
-      <h2>Market Snapshot</h2>
-
-      <div class="market-list">
-        <div class="market">
-          <div>
-            <div class="sym">S&P 500</div>
-            <div class="muted">SPX</div>
-          </div>
-          <div style="text-align:right;">
-            <div>4,128.32</div>
-            <div class="chg up">+0.78%</div>
-          </div>
-        </div>
-
-        <div class="market">
-          <div>
-            <div class="sym">10Y US Treasury</div>
-            <div class="muted">TNX</div>
-          </div>
-          <div style="text-align:right;">
-            <div>4.02%</div>
-            <div class="chg down">-0.04</div>
-          </div>
-        </div>
-
-        <div class="market">
-          <div>
-            <div class="sym">USD / EUR</div>
-            <div class="muted">FX</div>
-          </div>
-          <div style="text-align:right;">
-            <div>1.07</div>
-            <div class="chg up">+0.12%</div>
-          </div>
-        </div>
-
-        <div class="market">
-          <div>
-            <div class="sym">Gold</div>
-            <div class="muted">XAU</div>
-          </div>
-          <div style="text-align:right;">
-            <div>$2,139</div>
-            <div class="chg up">+0.6%</div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </body>
 </html>
+
 
