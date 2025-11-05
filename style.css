@@ -155,27 +155,39 @@ footer {
   font-size: 0.9rem;
 }
 
-/* VILLAIN PAGE – DEBTFOOL STYLING */
+/* --- DEBTFOOL PAGE FIXES & STYLING --- */
 .villain-header {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
   background: linear-gradient(180deg, #440000 0%, #1a0000 100%);
   text-align: center;
   padding: 3rem 1rem;
   border-bottom: 4px solid #ff004f;
+  box-sizing: border-box;
 }
 
 .villain-title {
   font-family: 'Nosifer', cursive;
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 8vw, 4rem);
   color: #ff1a1a;
   text-shadow: 0 0 15px #ff004f, 0 0 25px #660000;
   margin: 0;
+  word-wrap: break-word;
+}
+
+.villain-header .tagline {
+  font-family: 'Bangers', cursive;
+  color: #ffcccc;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  margin-top: 0.5rem;
 }
 
 .villain-image {
   display: block;
   margin: 1.5rem auto;
-  max-width: 400px;
-  width: 90%;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -198,8 +210,23 @@ footer {
   to { opacity: 1; text-shadow: 0 0 15px #ff1a1a; }
 }
 
-/* --- RESPONSIVE NAVIGATION (HAMBURGER MENU) --- */
+/* Mobile responsiveness for DebtFool sections */
+@media (max-width: 768px) {
+  body, main {
+    padding: 0;
+    margin: 0;
+  }
 
+  .villain-header {
+    padding: 2rem 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
+
+/* --- RESPONSIVE NAVIGATION (HAMBURGER MENU) --- */
 .navbar {
   background-color: #333;
   padding: 1rem;
@@ -291,3 +318,4 @@ footer {
   to { opacity: 1; transform: translateY(0); }
 }
 /* END OF STYLE.CSS */
+
