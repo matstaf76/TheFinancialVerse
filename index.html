@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The FinancialVerse</title>
 
-  <!-- Local stylesheet (served over HTTPS automatically if your site is) -->
+  <!-- Local stylesheet -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Secure Google Fonts link -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Bangers&display=swap" rel="stylesheet">
 
-  <!-- Recommended security meta tags -->
+  <!-- Security Meta -->
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 </head>
+
 <body>
   <header>
     <h1>The FinancialVerse</h1>
@@ -39,21 +40,45 @@
 
     <section id="heroes">
       <h2>🦸 Join the Heroes!</h2>
-      <ul>
-        <li><strong><a href="IronBanker.html">The Iron Banker</a></strong> – Bank accounts, borrowing and lending, and saving</li>
-        <li><strong><a href="CaptainCredit.html">Captain Credit</a></strong> – Building Credit, understanding credit and repairing bad credit</li>
-        <li><strong>Cashflow-Man</strong> – Income streams and cash management</li>
-        <li><strong>Lady Money</strong> – Wealth management basics and starting a business</li>
-        <li><strong>Dr. Dividend</strong> – Investing, stocks, and compound interest</li>
+      <ul class="character-list heroes">
+        <li>
+          <img src="images/IronBankerProfilePic.jpeg" alt="Iron Banker" class="profile-pic hero" />
+          <strong><a href="IronBanker.html">The Iron Banker</a></strong> – Bank accounts, borrowing and lending, and saving
+        </li>
+        <li>
+          <img src="images/CaptainCreditProfilePic.jpeg" alt="Captain Credit" class="profile-pic hero" />
+          <strong><a href="CaptainCredit.html">Captain Credit</a></strong> – Building Credit, understanding credit and repairing bad credit
+        </li>
+        <li>
+          <img src="images/cashflowman.jpg" alt="Cashflow-Man" class="profile-pic hero" />
+          <strong>Cashflow-Man</strong> – Income streams and cash management
+        </li>
+        <li>
+          <img src="images/ladymoney.jpg" alt="Lady Money" class="profile-pic hero" />
+          <strong>Lady Money</strong> – Wealth management basics and starting a business
+        </li>
+        <li>
+          <img src="images/drdividend.jpg" alt="Dr. Dividend" class="profile-pic hero" />
+          <strong>Dr. Dividend</strong> – Investing, stocks, and compound interest
+        </li>
       </ul>
     </section>
 
     <section id="villains">
       <h2>😈 Beware the Villains</h2>
-      <ul>
-        <li><strong>Scamos</strong> – Master of financial deception</li>
-        <li><strong>Debtfool</strong> – Seduces with bad credit deals</li>
-        <li><strong><a href="HiddenFeesSyndicate.html">The Foul and Evil, Hidden Fees Syndicate!</a></strong> – Count Overdraft, The Subscriptor, Gas Goblin, and more</li>
+      <ul class="character-list villains">
+        <li>
+          <img src="images/scamos.jpg" alt="Scamos" class="profile-pic villain" />
+          <strong>Scamos</strong> – Master of financial deception
+        </li>
+        <li>
+          <img src="images/DebtFoolFrontProfilePic.jpeg" alt="Debtfool" class="profile-pic villain" />
+          <strong><a href="DebtFool.html">DebtFool</a></strong> – Seduces with bad credit deals
+        </li>
+        <li>
+          <img src="images/hiddenfees.jpg" alt="Hidden Fees Syndicate" class="profile-pic villain" />
+          <strong><a href="HiddenFeesSyndicate.html">The Foul and Evil, Hidden Fees Syndicate!</a></strong> – Count Overdraft, The Subscriptor, Gas Goblin, and more
+        </li>
       </ul>
     </section>
 
@@ -83,7 +108,7 @@
     <p>&copy; 2025 The FinancialVerse. All rights reserved.</p>
   </footer>
 
-  <!-- Local script reference (served securely if your site uses HTTPS) -->
   <script src="script.js"></script>
 </body>
 </html>
+
