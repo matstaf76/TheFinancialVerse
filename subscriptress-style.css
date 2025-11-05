@@ -1,7 +1,6 @@
 /* ============================================================= */
-/*  subscriptress-style.css – FULLY RESPONSIVE, MOBILE-FIXED     */
-/*  Works perfectly on phones: NO CUT-OFF TITLE, NO OVERFLOW     */
-/*  Desktop styles preserved, no conflicts with "styles.css"     */
+/*  subscriptress-style.css – FINAL FIXED VERSION                */
+/*  Mobile-safe, no wrapping or cutoff for header text           */
 /* ============================================================= */
 
 body {
@@ -21,16 +20,25 @@ body {
   text-align: center;
   border-bottom: 4px solid #ff004f;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .villain-title {
+  margin: 0;
+  padding: 0 1rem;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.villain-title span {
   font-family: 'Nosifer', cursive;
   font-size: clamp(2rem, 6vw, 3.5rem);
   color: #ff1a1a;
   text-shadow: 0 0 15px #ff004f, 0 0 25px #660000;
-  margin: 0;
-  display: inline-block;
-  max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -42,6 +50,7 @@ body {
   color: #ffcccc;
   font-size: clamp(1rem, 4vw, 1.5rem);
   margin-top: 0.5rem;
+  text-align: center;
 }
 
 /* ====================== NAVIGATION (Hamburger) ====================== */
@@ -179,19 +188,13 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ====================== MOBILE RESPONSIVE FIXES ====================== */
+/* ====================== MOBILE FIXES ====================== */
 @media (max-width: 768px) {
   .villain-header {
     padding: 2rem 1rem;
   }
-  .villain-title {
+  .villain-title span {
     font-size: clamp(2rem, 6vw, 2.5rem);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-break: keep-all;
-    display: inline-block;
-    max-width: 100%;
   }
   .villain-header .tagline {
     font-size: 1.1rem;
