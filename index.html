@@ -22,7 +22,7 @@
     <p class="tagline">Where heroes teach you about money while villains try to take it.</p>
   </header>
 
-    <nav class="navbar">
+  <nav class="navbar">
     <div class="menu-toggle" id="mobile-menu">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -48,23 +48,38 @@
       <ul class="character-list heroes">
         <li>
           <img src="images/IronBankerProfilePic.jpeg" alt="Iron Banker" class="profile-pic hero" />
-          <strong><a href="IronBanker.html">The Iron Banker</a></strong><p>Bank accounts, borrowing and lending, and saving</p>
+          <div class="character-info">
+            <strong><a href="IronBanker.html">The Iron Banker</a></strong>
+            <p>Bank accounts, borrowing and lending, and saving.</p>
+          </div>
         </li>
         <li>
           <img src="images/CaptainCreditProfilePic.jpeg" alt="Captain Credit" class="profile-pic hero" />
-          <strong><a href="CaptainCredit.html">Captain Credit</a></strong><p>Building Credit, understanding credit and repairing bad credit</p>
+          <div class="character-info">
+            <strong><a href="CaptainCredit.html">Captain Credit</a></strong>
+            <p>Building Credit, understanding credit, and repairing bad credit.</p>
+          </div>
         </li>
         <li>
           <img src="images/cashflowman.jpg" alt="Cashflow-Man" class="profile-pic hero" />
-          <strong>Cashflow-Man</strong> Income streams and cash management
+          <div class="character-info">
+            <strong>Cashflow-Man</strong>
+            <p>Income streams and cash management.</p>
+          </div>
         </li>
         <li>
           <img src="images/ladymoney.jpg" alt="Lady Money" class="profile-pic hero" />
-          <strong>Lady Money</strong> Wealth management basics and starting a business
+          <div class="character-info">
+            <strong>Lady Money</strong>
+            <p>Wealth management basics and starting a business.</p>
+          </div>
         </li>
         <li>
           <img src="images/drdividend.jpg" alt="Dr. Dividend" class="profile-pic hero" />
-          <strong>Dr. Dividend</strong> Investing, stocks, and compound interest
+          <div class="character-info">
+            <strong>Dr. Dividend</strong>
+            <p>Investing, stocks, and compound interest.</p>
+          </div>
         </li>
       </ul>
     </section>
@@ -74,15 +89,24 @@
       <ul class="character-list villains">
         <li>
           <img src="images/Scamos.jpg" alt="Scamos" class="profile-pic villain" />
-          <strong>Scamos</strong>     The Master of Financial Deception
+          <div class="character-info">
+            <strong>Scamos</strong>
+            <p>The Master of Financial Deception.</p>
+          </div>
         </li>
         <li>
-          <img src="images/DebtFoolFrontProfilePicCropped.jpg" alt="Debtfool" class="profile-pic villain" />
-          <strong><a href="DebtFool.html">DebtFool</a></strong>     Seduces with bad credit deals
+          <img src="images/DebtFoolFrontProfilePicCropped.jpg" alt="DebtFool" class="profile-pic villain" />
+          <div class="character-info">
+            <strong><a href="DebtFool.html">DebtFool</a></strong>
+            <p>Seduces with bad credit deals and easy money traps.</p>
+          </div>
         </li>
         <li>
           <img src="images/hiddenfees.jpg" alt="Hidden Fees Syndicate" class="profile-pic villain" />
-          <strong><a href="HiddenFeesSyndicate.html">The Foul and Evil, Hidden Fees Syndicate!</a></strong>     Count Overdraft, The Subscriptress, Gas Goblin, and more
+          <div class="character-info">
+            <strong><a href="HiddenFeesSyndicate.html">The Foul and Evil Hidden Fees Syndicate!</a></strong>
+            <p>Count Overdraft, The Subscriptress, Gas Goblin, and more.</p>
+          </div>
         </li>
       </ul>
     </section>
@@ -115,14 +139,14 @@
 
   <script src="script.js"></script>
   <script>
-  const menu = document.getElementById('mobile-menu');
-  const navList = document.querySelector('.nav-list');
-
-  menu.addEventListener('click', () => {
-    menu.classList.toggle('active');
-    navList.classList.toggle('active');
-  });
-   </script>
+    const menu = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+    menu.addEventListener('click', () => {
+      menu.classList.toggle('active');
+      navList.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
+
 
