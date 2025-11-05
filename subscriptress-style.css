@@ -32,6 +32,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  word-break: keep-all;
 }
 
 .villain-header .tagline {
@@ -182,11 +183,11 @@ footer {
     padding: 2rem 1rem;
   }
   .villain-title {
-    font-size: 2.2rem;
-    white-space: normal;
-    word-wrap: break-word;
-    hyphens: none;
-    overflow: visible;
+    font-size: clamp(2rem, 6vw, 2.5rem);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: keep-all;
   }
   .villain-header .tagline {
     font-size: 1.1rem;
