@@ -22,8 +22,13 @@
     <p class="tagline">Where heroes teach you about money — and villains try to take it.</p>
   </header>
 
-  <nav>
-    <ul>
+    <nav class="navbar">
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav-list">
       <li><a href="#heroes">Heroes!</a></li>
       <li><a href="#villains">Villains!</a></li>
       <li><a href="#learn">Protect yourself! Learn the Basics of Finance Literacy!</a></li>
@@ -109,6 +114,15 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+  const menu = document.getElementById('mobile-menu');
+  const navList = document.querySelector('.nav-list');
+
+  menu.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    navList.classList.toggle('active');
+  });
+   </script>
 </body>
 </html>
 
