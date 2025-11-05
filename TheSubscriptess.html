@@ -12,9 +12,9 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <style>
+    /* core resets */
     * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; overflow-x: hidden; }
-
+    html, body { margin: 0; padding: 0; overflow-x: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
     body {
       font-family: 'Permanent Marker', cursive;
       background-color: #1a1a1a;
@@ -30,6 +30,7 @@
       background: linear-gradient(180deg, #440000 0%, #1a0000 100%);
       text-align: center;
       border-bottom: 4px solid #ff004f;
+      overflow: visible; /* ensure glow isn't clipped by parent */
     }
 
     .villain-title {
@@ -37,21 +38,44 @@
       padding: 0 1rem;
       width: 100%;
       text-align: center;
+      overflow: visible;
     }
 
+    /* Glowing title — uses Bangers (stable) and animated text-shadow */
     .villain-title span {
-      font-family: 'Bangers', cursive;  /* Changed from Nosifer */
+      font-family: 'Bangers', cursive;
       font-size: 3rem;
       color: #ff1a1a;
-      text-shadow: 0 0 10px #ff004f;
       display: inline-block;
       white-space: normal;
-      overflow: visible; 
+      overflow: visible;            /* critical to avoid clipping */
       text-overflow: unset;
       word-break: break-word;
       line-height: 1;
       max-width: 100%;
-      padding-right: 0.3em;  /* ensure exclamation fits */
+      padding-right: 0.45em;        /* breathing room for punctuation and glow */
+      -webkit-text-stroke: 0.6px rgba(0,0,0,0.25); /* subtle edge for readability */
+      animation: headerGlow 2.2s infinite alternate ease-in-out;
+    }
+
+    /* base/soft glow that animates without clipping */
+    @keyframes headerGlow {
+      from {
+        text-shadow:
+          0 0 6px rgba(255,26,26,0.65),
+          0 0 12px rgba(255,0,79,0.45),
+          0 0 22px rgba(102,0,0,0.25);
+        transform: translateY(0);
+        filter: drop-shadow(0 0 6px rgba(255,26,26,0.45));
+      }
+      to {
+        text-shadow:
+          0 0 12px rgba(255,26,26,0.95),
+          0 0 22px rgba(255,0,79,0.8),
+          0 0 36px rgba(102,0,0,0.45);
+        transform: translateY(-1px);
+        filter: drop-shadow(0 0 12px rgba(255,26,26,0.6));
+      }
     }
 
     @media (max-width: 900px) { .villain-title span { font-size: 2.5rem; } }
@@ -65,7 +89,7 @@
       margin-top: 0.5rem;
     }
 
-    /* ===== MAIN CONTENT ===== */
+    /* ===== MAIN CONTENT (unchanged aside from safety) ===== */
     main { padding: 2rem; }
     section { margin-bottom: 2rem; }
     h2 {
@@ -213,6 +237,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
