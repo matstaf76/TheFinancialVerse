@@ -1,0 +1,43 @@
+/* mobile.css – Mobile-first fixes for The Subscriptress page */
+/* Load this AFTER style.css in <head> */
+
+@media (max-width: 768px) {
+  /* Fix the villain header overflow & title wrapping */
+  .villain-header {
+    width: 100%;
+    margin: 0 !important;
+    padding: 1.5rem 1rem !important;
+  }
+
+  .villain-title {
+    font-size: 2.2rem !important;
+    word-break: keep-all !important;
+    hyphens: none !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    line-height: 1.1 !important;
+  }
+
+  .villain-header .tagline {
+    font-size: 1.1rem !important;
+    white-space: normal !important;
+  }
+
+  /* Fix gallery stacking */
+  .gallery {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    padding: 0 1rem !important;
+  }
+
+  /* Image sizing */
+  .villain-image {
+    width: 90% !important;
+    max-width: 400px !important;
+  }
+
+  /* General spacing */
+  main { padding: 1.5rem 1rem !important; }
+  section { padding: 0 !important; }
+}
