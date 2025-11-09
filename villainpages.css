@@ -1,5 +1,5 @@
 /* villainpages.css — shared villain bio layout
-   Mobile-first, responsive, centered images/text
+   Mobile-first, responsive, cinematic style
 */
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -83,6 +83,57 @@ p {
   font-size: 1.1em;
 }
 
+/* ===== Buttons ===== */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 3rem auto 2rem;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-family: "Bangers", cursive;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+/* Evil red/orange button */
+.btn-evil {
+  background: linear-gradient(90deg, #ff3030, #ff6600);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255, 64, 0, 0.6);
+}
+
+.btn-evil:hover {
+  background: linear-gradient(90deg, #ff6600, #ff3030);
+  box-shadow: 0 0 25px rgba(255, 80, 0, 0.8);
+  transform: scale(1.08);
+}
+
+/* Heroic green button */
+.btn-hero {
+  background: linear-gradient(90deg, #00b33c, #66ff66);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 255, 80, 0.6);
+}
+
+.btn-hero:hover {
+  background: linear-gradient(90deg, #66ff66, #00b33c);
+  box-shadow: 0 0 25px rgba(0, 255, 80, 0.8);
+  transform: scale(1.08);
+}
+
+
 /* ===== Footer ===== */
 footer {
   background: #0a0a0a;
@@ -106,4 +157,5 @@ footer {
   .villain-header h1 { font-size: 3.5rem; }
   .villain-header .tagline { font-size: 1.25rem; }
   main { padding: 3rem 0; }
+  .btn { font-size: 1.25rem; }
 }
