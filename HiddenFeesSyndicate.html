@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Hidden Fees Syndicate</title>
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="TheHiddenFeesSynd.css" />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Bangers&display=swap" rel="stylesheet">
@@ -11,49 +14,12 @@
   <!-- Security Meta -->
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-
-  <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: 'Permanent Marker', cursive; background-color: #f0f0f0; color: #111; }
-    a { color: #800000; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    header { text-align: center; padding: 2rem 1rem; background: linear-gradient(180deg,#440000 0%,#1a0000 100%); color: #fff; }
-    header h1 { font-family: 'Bangers', cursive; font-size: 3rem; margin: 0; text-shadow: 0 0 10px #ff004f; }
-    header p.tagline { font-family: 'Bangers', cursive; font-size: 1.5rem; margin-top: 0.5rem; }
-
-    .navbar { background: #333; display: flex; justify-content: center; padding: 0.5rem; position: relative; }
-    .menu-toggle { display: none; flex-direction: column; justify-content: space-between; width: 30px; height: 21px; cursor: pointer; margin-right: 1rem; }
-    .bar { height: 3px; width: 100%; background-color: #ffcc00; border-radius: 10px; transition: all 0.3s ease; }
-    .nav-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; }
-    .nav-list li { margin: 0 1rem; }
-    .nav-list a { font-weight: bold; color: #ffcc00; }
-    .nav-list a:hover { color: #ffaa00; }
-
-    main { padding: 2rem; max-width: 1200px; margin: 0 auto; }
-    section { margin-bottom: 3rem; }
-    h2 { color: #800000; font-size: 2rem; margin-bottom: 1rem; }
-
-    ul.character-list { list-style: none; padding: 0; margin: 1rem auto; display: flex; flex-wrap: wrap; justify-content: center; max-width: 1000px; }
-    ul.character-list li { margin: 1rem; flex: 0 1 200px; text-align: center; }
-    ul.character-list img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #800000; transition: transform 0.3s ease, box-shadow 0.3s ease; }
-    ul.character-list img:hover { transform: scale(1.05); box-shadow: 0 0 15px #ff004f; }
-    .character-info { margin-top: 0.5rem; }
-
-    @media(max-width: 768px){
-      .menu-toggle { display: flex; }
-      .nav-list { display: none; flex-direction: column; width: 100%; background: #333; position: absolute; top: 45px; left: 0; z-index: 999; }
-      .nav-list.active { display: flex; }
-      ul.character-list { flex-direction: column; align-items: center; }
-      ul.character-list li { flex: 0 1 80%; margin: 1rem 0; }
-    }
-  </style>
 </head>
 <body>
 
   <header>
     <h1>The Hidden Fees Syndicate!</h1>
-    <p class="tagline">The Evil Villains hiding fees and draining wallets everywhere!</p>
+    <p class="tagline">Evil villains hiding fees and draining wallets everywhere!</p>
   </header>
 
   <nav class="navbar">
@@ -72,7 +38,11 @@
       <h2>Meet the Syndicate</h2>
       <ul class="character-list">
         <li>
-          <img src="images/CountOverdraft_profilepic.jpg" alt="Count Overdraft">
+          <img src="images/TheSubscriptess.jpg" alt="The Subscriptess">
+          <div class="character-info"><a href="TheSubscriptess.html">The Subscriptess</a></div>
+        </li>
+        <li>
+          <img src="images/CountOverdraft.jpg" alt="Count Overdraft">
           <div class="character-info"><a href="CountOverdraft.html">Count Overdraft</a></div>
         </li>
         <li>
@@ -80,38 +50,34 @@
           <div class="character-info"><a href="TheSwipe.html">The Swipe</a></div>
         </li>
         <li>
-          <img src="images/GasGoblin.jpg" alt="Gas Goblin">
-          <div class="character-info"><a href="GasGoblin.html">Gas Goblin</a></div>
+          <img src="images/JackTheRuiner.jpg" alt="Jack The Ruiner">
+          <div class="character-info"><a href="JackTheRuiner.html">Jack The Ruiner</a>
+          </div>
         </li>
         <li>
           <img src="images/ATMtheBarbarian.jpg" alt="ATM the Barbarian">
           <div class="character-info"><a href="ATMtheBarbarian.html">ATM the Barbarian</a></div>
         </li>
         <li>
-          <img src="images/TheSubscriptessStart.jpg" alt="The Subscriptess">
-          <div class="character-info"><a href="TheSubscriptess.html">The Subscriptess</a></div>
+          <img src="images/ATMtheBarbarian.jpg" alt="ATM the Barbarian">
+          <div class="character-info"><a href="ATMtheBarbarian.html">The Ancillary Aliens</a></div>
         </li>
+        <li>
+          <img src="images/GasGoblin.jpg" alt="Gas Goblin">
+          <div class="character-info"><a href="GasGoblin.html">Gas Goblin</a></div>
+        </li>                
         <li>
           <img src="images/Tollitician.jpg" alt="Tollitician">
           <div class="character-info"><a href="Tollitician.html">Tollitician</a></div>
         </li>
         <li>
-          <img src="images/UrsulaUtilitySleazy.jpg" alt="Ursula Utility">
+          <img src="images/UrsulaUtility.jpg" alt="Ursula Utility">
           <div class="character-info"><a href="UrsulaUtility.html">Ursula Utility</a></div>
         </li>
         <li>
           <img src="images/Broadcastinator.jpg" alt="Broadcastinator">
           <div class="character-info"><a href="Broadcastinator.html">Broadcastinator</a></div>
-        </li>
-        <li>
-          <img src="images/JacktheRuiner.jpg" alt="Jack The Ruiner">
-          <div class="character-info"><a href="JackTheRuiner.html">Jack The Ruiner</a>
-            <ul>
-              <img src="images/AncillaryAliensOverheadbags.jpg" alt="Ancillary Aliens">
-              <li><a href="AncillaryAliens.html">Ancillary Aliens</a></li>
-            </ul>
-          </div>
-        </li>
+        </li>        
       </ul>
     </section>
   </main>
@@ -127,3 +93,6 @@
 
 </body>
 </html>
+
+
+
