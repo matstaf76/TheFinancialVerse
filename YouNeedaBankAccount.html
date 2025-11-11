@@ -5,95 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>You Need Your Own Bank Account — The IronBanker</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Hero Stylesheet -->
+  <link rel="stylesheet" href="heropages.css" />
 
-  <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html, body { height: 100%; margin: 0; }
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 
-    :root {
-      --bg: #0f1724;
-      --card: #0b1220;
-      --muted: #9aa6b2;
-      --accent: #ffb86b;
-      --accent-hover: #ffd9a1;
-      font-family: 'Inter', system-ui, sans-serif;
-    }
-
-    body {
-      background: linear-gradient(180deg, var(--bg), #071024);
-      color: #e6eef6;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 36px 20px;
-      min-height: 100vh;
-    }
-
-    h1 {
-      font-family: 'Bangers', cursive;
-      color: var(--accent);
-      font-size: clamp(2rem, 5vw, 3rem);
-      text-shadow: 3px 3px rgba(0,0,0,0.85);
-      margin: 0 0 20px 0;
-      text-align: center;
-    }
-
-    .content {
-      background: var(--card);
-      max-width: 640px;
-      padding: 24px;
-      border-radius: 14px;
-      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
-      line-height: 1.6;
-    }
-
-    .content h2 {
-      color: var(--accent);
-      margin-top: 0;
-      font-size: 1.3rem;
-    }
-
-    .content p {
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
-    a.button {
-      display: inline-block;
-      background: var(--accent);
-      color: #1a1a1a;
-      font-family: 'Bangers', cursive;
-      text-decoration: none;
-      padding: 10px 18px;
-      border-radius: 10px;
-      margin-top: 20px;
-      transition: all 0.25s ease;
-      letter-spacing: 1px;
-      box-shadow: 0 4px 10px rgba(255,184,107,0.4);
-    }
-
-    a.button:hover {
-      background: var(--accent-hover);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(255,184,107,0.6);
-    }
-  </style>
+  <!-- Security -->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 </head>
 <body>
-  <h1>You Need Your Own Bank Account</h1>
+  <!-- HEADER -->
+  <header class="hero-header">
+    <h1 class="hero-title">You Need Your Own Bank Account</h1>
+    <p class="tagline">Start protecting your money and building financial power!</p>
+  </header>
 
-  <div class="content">
-    <h2>Start Building Your Financial Foundation</h2>
-    <p>Having your own bank account is one of the first and most important steps toward financial independence. It gives you a safe place to store your money, track your spending, and start forming good saving habits.</p>
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="content">
+      <h2>Start Building Your Financial Foundation</h2>
+      <p>Having your own bank account is one of the first and most important steps toward financial independence. It gives you a safe place to store your money, track your spending, and start forming good saving habits.</p>
 
-    <p>With your own account, you can receive direct deposits, pay bills securely, and start saving toward goals that matter to you — all while avoiding costly check-cashing fees and money traps.</p>
+      <p>With your own account, you can receive direct deposits, pay bills securely, and start saving toward goals that matter to you — all while avoiding costly check-cashing fees and money traps.</p>
 
-    <p><strong>The IronBanker says:</strong> “Your account is your shield — it protects your money and builds your financial power.”</p>
+      <p><strong>The IronBanker says:</strong> “Your account is your shield — it protects your money and builds your financial power.”</p>
+    </section>
 
-    <a href="index.html" class="button">← Back to Home</a>
-  </div>
+    <!-- WHY YOU NEED YOUR OWN BANK ACCOUNT -->
+    <section class="hero-advice">
+      <h2>🛡️ Why You Need Your Own Bank Account</h2>
+      <ul class="knowledge-list">
+        <li>💰 <strong>Keep Your Money Safe:</strong> Cash can get lost or stolen. In a bank, your money is protected and easy to recover.</li>
+        <li>🧾 <strong>Build Financial Independence:</strong> You can manage your own money, get paid directly, and make your own financial decisions.</li>
+        <li>📈 <strong>Start Building Good Habits:</strong> Track your spending, save automatically, and learn how to manage money like a true financial hero!</li>
+      </ul>
+    </section>
+
+    <!-- BUTTONS -->
+    <div class="button-container">
+      <a href="index.html" class="btn btn-hero">← Back to Home</a>
+      <a href="BasicsofBanking.html" class="btn btn-hero">Learn Banking Basics</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 The FinancialVerse — Knowledge is the Strongest Currency.</p>
+  </footer>
 </body>
 </html>
+
