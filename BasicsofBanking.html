@@ -1,99 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Basics of Banking — The IronBanker</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Iron Banker — Basics of Banking</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Hero Styles -->
+  <link rel="stylesheet" href="heropages.css" />
 
-  <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html, body { height: 100%; margin: 0; }
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Luckiest+Guy&family=Bangers&family=Baloo+2:wght@500;700&display=swap" rel="stylesheet">
 
-    :root {
-      --bg: #0f1724;
-      --card: #0b1220;
-      --muted: #9aa6b2;
-      --accent: #ffb86b;
-      --accent-hover: #ffd9a1;
-      font-family: 'Inter', system-ui, sans-serif;
-    }
-
-    body {
-      background: linear-gradient(180deg, var(--bg), #071024);
-      color: #e6eef6;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 36px 20px;
-      min-height: 100vh;
-    }
-
-    h1 {
-      font-family: 'Bangers', cursive;
-      color: var(--accent);
-      font-size: clamp(2rem, 5vw, 3rem);
-      text-shadow: 3px 3px rgba(0,0,0,0.85);
-      margin: 0 0 20px 0;
-      text-align: center;
-    }
-
-    .content {
-      background: var(--card);
-      max-width: 640px;
-      padding: 24px;
-      border-radius: 14px;
-      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
-      line-height: 1.6;
-    }
-
-    .content h2 {
-      color: var(--accent);
-      margin-top: 0;
-      font-size: 1.3rem;
-    }
-
-    .content p {
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
-    a.button {
-      display: inline-block;
-      background: var(--accent);
-      color: #1a1a1a;
-      font-family: 'Bangers', cursive;
-      text-decoration: none;
-      padding: 10px 18px;
-      border-radius: 10px;
-      margin-top: 20px;
-      transition: all 0.25s ease;
-      letter-spacing: 1px;
-      box-shadow: 0 4px 10px rgba(255,184,107,0.4);
-    }
-
-    a.button:hover {
-      background: var(--accent-hover);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(255,184,107,0.6);
-    }
-  </style>
+  <!-- Security -->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 </head>
+
 <body>
-  <h1>The Basics of Banking</h1>
 
-  <div class="content">
-    <h2>Understanding How Banks Work</h2>
-    <p>Banks are the backbone of the financial world. They protect your money, help it grow, and make it easy to access when you need it. When you deposit money, the bank keeps it safe and even pays you interest. That same money helps others borrow to buy homes, start businesses, or pay for education.</p>
+  <!-- HEADER -->
+  <header class="hero-header">
+    <h1 class="hero-title">The Iron Banker</h1>
+    <p class="hero-tagline">Protector of Savers. Teacher of Financial Wisdom.</p>
+  </header>
 
-    <p>Learning the basics of banking helps you use financial tools wisely — from checking accounts to loans and credit cards. Knowing how the system works keeps you in control instead of paying unnecessary fees or falling for risky offers.</p>
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="intro">
+      <img src="images/IronBankerDeskPhotoDollarSignonWall.jpg" alt="The Iron Banker standing strong" class="hero-image" />
+      <p>
+        Greetings, young hero! I am <strong>The Iron Banker</strong>, sworn enemy of financial villains and guardian of smart money habits.
+      </p>
+      <p>
+        Today, I will teach you the <span class="highlight">Basics of Banking</span>, your first shield against financial traps!
+      </p>
+    </section>
 
-    <p><strong>The IronBanker says:</strong> “A bank should work for you — not the other way around!”</p>
+    <h1>The Basics of Banking</h1>
 
-    <a href="index.html" class="button">← Back to Home</a>
-  </div>
+    <div class="content">
+      <h2>Understanding How Banks Work</h2>
+      <p>
+        Banks are the backbone of the financial world. They protect your money, help it grow, and make it easy to access when you need it. When you deposit money, the bank keeps it safe and sometimes even pays you interest. That same money helps others borrow to buy homes, start businesses, or pay for education.
+      </p>
+
+      <p>
+        Learning the basics of banking helps you use financial tools wisely, from checking accounts to loans and credit cards. Knowing how the system works keeps you in control instead of paying unnecessary fees or falling for risky offers.
+      </p>
+
+      <p><strong>The Iron Banker says:</strong> <span class="highlight"> “A bank should work for you NOT the other way around!”</span></p>
+    </div>
+
+    <section class="basics">
+      <h2>🏦 Banking Basics (For Checking & Savings Accounts)</h2>
+      <ul class="knowledge-list">
+        <li>🏛️ <strong>Banks are money keepers.</strong> They keep your money safe and insured which is why it is better than hiding it in a sock drawer or in the mattress!</li>
+
+        <li>💳 <strong>You can have two main types of accounts:</strong>
+          <ul>
+            <li><strong>Checking account:</strong> for <em>spending and paying bills</em>.</li>
+            <li><strong>Savings account:</strong> for <em>storing and growing your money</em> over time.</li>
+          </ul>
+        </li>
+
+        <li>💰 <strong>Checking = Everyday Money.</strong> Use it with a debit card or checks to buy things or pay online.</li>
+
+        <li>🏦 <strong>Savings = Future Money.</strong> Save up for something big — a bike, console, or adventure!</li>
+
+        <li>📲 <strong>Banks use apps and ATMs</strong> so you can check balances, deposit, or withdraw money anytime.</li>
+
+        <li>🌱 <strong>Interest helps your savings grow.</strong> The bank pays you a tiny bit for letting them hold your money.</li>
+
+        <li>🩸 <strong>Overdrafts are trouble!</strong> Spending more than you have lets <span class="villain-name">Count Overdraft</span> attack your balance.</li>
+
+        <li>🔁 <strong>Transfers move money</strong> between checking and savings with just a few taps.</li>
+
+        <li>✨ <strong>Direct deposit can be paycheck magic.</strong> Your allowance or job pay can go straight into your account automatically.</li>
+
+        <li>⚔️ <strong>Debit cards are not Credit cards.</strong> Debit uses <em>your money</em>; credit borrows <em>someone else’s</em> money.</li>
+
+        <li>🕵️‍♂️ <strong>Keep your info secret.</strong> Never share your PIN, card number, or passwords — villains love that!</li>
+
+        <li>💡 <strong>Good habit:</strong> Always check your balance before spending. That’s how heroes defeat <span class="villain-name">Count Overdraft</span> and <span class="villain-name">The Swipe</span> every time.</li>
+      </ul>
+    </section>
+
+    <section class="closing">
+      <img src="images/IronBanker2ThumbsUp.jpg" alt="The Iron Banker teaching financial heroes" class="hero-image" />
+      <p>
+        Remember: every wise choice strengthens your <span class="highlight">Shield of Knowledge</span>. Stay alert, save wisely, and help others learn to fight back against The Hidden Fees Syndicate!
+      </p>
+    </section>
+
+    <!-- BUTTONS -->
+    <div class="button-container">
+      <a href="ShieldsofKnowledge.html" class="hero-button green-button">Return to Shields of Knowledge</a>
+      <a href="HiddenFeesSyndicate.html" class="hero-button blue-button">Know Your Enemies</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 The FinancialVerse — Knowledge is the Strongest Currency.</p>
+  </footer>
+
 </body>
 </html>

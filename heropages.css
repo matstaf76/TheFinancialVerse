@@ -1,0 +1,221 @@
+/* === HERO PAGES STYLESHEET ===
+   Used for The Iron Banker and other hero pages
+   Author: Matt Stafford
+   ============================================= */
+
+/* --- BASE STYLES --- */
+body {
+  margin: 0;
+  font-family: "Comic Neue", sans-serif;
+  background-color: #000;
+  color: #f5f5f5;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* --- HEADER --- */
+.hero-header {
+  background: linear-gradient(180deg, #002d1a 0%, #000 100%);
+  text-align: center;
+  padding: 3rem 1rem;
+  border-bottom: 4px solid #00ff80;
+  box-shadow: 0 0 20px rgba(0, 255, 128, 0.3);
+}
+
+.hero-title {
+  font-family: "Luckiest Guy", cursive;
+  color: #00ff80;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  letter-spacing: 1px;
+  text-shadow: 0 0 15px #00ff99, 0 0 30px #00ff80;
+  margin: 0;
+}
+
+.hero-tagline {
+  font-family: "Bangers", cursive;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  color: #bfffe0;
+  margin-top: 0.5rem;
+  text-shadow: 0 0 6px #00ffaa;
+}
+
+/* --- MAIN CONTENT --- */
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+/* --- SECTION HEADINGS --- */
+h2 {
+  font-family: "Baloo 2", sans-serif;
+  color: #00ffaa;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 6px #00ffaa;
+  font-size: 1.8rem;
+  line-height: 1.3;
+  position: relative;
+  display: inline-block;
+}
+
+/* Optional animated underline */
+h2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #00ffaa;
+  margin: 0.5rem auto 0;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+h2:hover::after {
+  width: 100%;
+}
+
+/* --- PARAGRAPHS --- */
+p {
+  max-width: 800px;
+  margin: 0.5rem auto;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  line-height: 1.7;
+}
+
+/* --- HERO IMAGES --- */
+.hero-image {
+  display: block;
+  margin: 1.5rem auto;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 128, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 255, 180, 0.8);
+}
+
+/* --- HIGHLIGHT CLASS --- */
+.highlight {
+  color: #00ffaa;
+  font-weight: bold;
+  text-shadow: 0 0 8px #00ffaa;
+}
+
+/* --- HERO BUTTONS --- */
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.hero-button {
+  font-family: "Bangers", cursive;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 255, 180, 0.4);
+}
+
+/* --- BUTTON VARIANTS --- */
+.green-button {
+  background: linear-gradient(135deg, #00ff80 0%, #00994d 100%);
+  border-color: #00ffaa;
+  box-shadow: 0 0 15px rgba(0, 255, 128, 0.6);
+}
+
+.green-button:hover {
+  background: linear-gradient(135deg, #00ffaa 0%, #00cc66 100%);
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(0, 255, 128, 0.9);
+}
+
+.blue-button {
+  background: linear-gradient(135deg, #00ccff 0%, #004d99 100%);
+  border-color: #00ccff;
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.6);
+}
+
+.blue-button:hover {
+  background: linear-gradient(135deg, #33ddff 0%, #0066cc 100%);
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(0, 204, 255, 0.9);
+}
+
+.gold-button {
+  background: linear-gradient(135deg, #ffcc00 0%, #cc9900 100%);
+  border-color: #ffcc00;
+  color: #000;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+}
+
+.gold-button:hover {
+  background: linear-gradient(135deg, #ffdd33 0%, #e6b800 100%);
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(255, 204, 0, 0.9);
+}
+
+/* --- PULSE ANIMATION (Optional) --- */
+@keyframes heroPulse {
+  0% { box-shadow: 0 0 10px rgba(0, 255, 180, 0.5); }
+  50% { box-shadow: 0 0 25px rgba(0, 255, 180, 0.9); }
+  100% { box-shadow: 0 0 10px rgba(0, 255, 180, 0.5); }
+}
+
+.hero-button:hover {
+  animation: heroPulse 1.2s infinite ease-in-out;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: #111;
+  color: #999;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 2px solid #00ffaa;
+}
+
+/* --- RESPONSIVENESS --- */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-image {
+    max-width: 90%;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .hero-button {
+    width: 80%;
+  }
+}
+
+/* --- END OF HEROPAGES.CSS --- */
+
+

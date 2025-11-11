@@ -1,147 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The IronBanker</title>
+  <title>The Iron Banker</title>
+
+  <!-- Shared Hero Styles -->
+  <link rel="stylesheet" href="heropages.css" />
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Baloo+2:wght@600;700&display=swap" rel="stylesheet">
 
-  <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html, body { height: 100%; margin: 0; }
-
-    :root {
-      --bg: #0f1724;
-      --card: #0b1220;
-      --muted: #9aa6b2;
-      --accent: #ffb86b;
-      --accent-hover: #ffd9a1;
-      --page-max: 980px;
-      font-family: 'Inter', system-ui, sans-serif;
-    }
-
-    body {
-      background: linear-gradient(180deg, var(--bg), #071024);
-      color: #e6eef6;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    .page {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 20px;
-      padding: 36px 20px;
-      max-width: var(--page-max);
-      margin: 0 auto;
-    }
-
-    h1 {
-      font-family: 'Bangers', cursive;
-      font-size: clamp(2rem, 5vw, 3rem);
-      color: var(--accent);
-      letter-spacing: 1.5px;
-      text-shadow: 3px 3px rgba(0,0,0,0.85);
-      margin: 0;
-      padding: 8px 12px;
-      line-height: 1;
-      display: inline-block;
-    }
-
-    .image-link {
-      margin-top: 8px;
-      text-align: center;
-    }
-    .image-link a { display:inline-block; }
-    .image-link img {
-      max-width: 320px;
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
-      display:block;
-    }
-    .image-link img:hover { transform: translateY(-4px) scale(1.02); }
-
-    .description {
-      max-width: 480px;
-      text-align: center;
-      color: var(--muted);
-      font-size: 1rem;
-      line-height: 1.5;
-      margin-top: 10px;
-    }
-
-    /* Link buttons */
-    .link-buttons {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-      margin-top: 12px;
-    }
-
-    .link-buttons a {
-      display: inline-block;
-      background: var(--accent);
-      color: #1a1a1a;
-      font-weight: 700;
-      font-size: 1rem;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 10px;
-      transition: all 0.25s ease;
-      font-family: 'Bangers', cursive;
-      letter-spacing: 1px;
-      box-shadow: 0 4px 10px rgba(255,184,107,0.4);
-    }
-
-    .link-buttons a:hover {
-      background: var(--accent-hover);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(255,184,107,0.6);
-    }
-
-    @media (min-width: 820px) {
-      .page { padding-top: 48px; }
-      .link-buttons { flex-direction: row; gap: 20px; }
-    }
-
-    @media (max-width: 420px) {
-      h1 { font-size: 2rem; padding: 6px 8px; }
-    }
-  </style>
+  <!-- Security -->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 </head>
+
 <body>
-  <div class="page">
-    <h1>The IronBanker!</h1>
+  <div class="hero-page">
+    <!-- HEADER -->
+    <header class="hero-header">
+      <h1 class="hero-title">The Iron Banker!</h1>
+      <p class="hero-tagline">Protector of Savers. Champion of Financial Wisdom.</p>
+    </header>
 
-    <div class="image-link">
-      <a href="https://thefinancialverse.com" target="_blank" rel="noopener noreferrer">
-        <img src="images/IronBankerThumbUp.jpg" alt="Visit The IronBanker">
-      </a>
-    </div>
+    <!-- MAIN IMAGE -->
+    <section class="hero-intro">
+      <img src="images/IronBankerThumbUp.jpg" alt="The Iron Banker giving a thumbs up" class="hero-image" />
+      <p>
+        <strong>The Iron Banker</strong> is a financial hero on a mission to help everyone take control of their money.
+        He teaches people how to save wisely, invest smartly, and avoid predatory financial practices.
+        Whether you’re just starting out or rebuilding your financial future,
+        <strong>The Iron Banker</strong> stands ready to guide you toward financial freedom.
+      </p>
+    </section>
 
-    <div class="description">
-      <p><strong>The IronBanker</strong> — a financial hero on a mission to help everyone take control of their money. 
-      He teaches people how to save wisely, invest smartly, and avoid the traps of predatory financial practices. 
-      Whether you’re just starting out or rebuilding your financial future, The IronBanker stands ready to guide you toward financial freedom.</p>
-    </div>
-
-    <div class="link-buttons">
-      <a href="BasicsofBanking.html">The Basics of Banking</a>
-      <a href="YouNeedaBankAccount.html">You Need Your Own Bank Account</a>
+    <!-- BUTTONS -->
+    <div class="button-container">
+      <a href="BasicsofBanking.html" class="hero-button green-button">The Basics of Banking</a>
+      <a href="YouNeedaBankAccount.html" class="hero-button blue-button">You Need Your Own Bank Account</a>
     </div>
   </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 The FinancialVerse Strength Through Knowledge.</p>
+  </footer>
 </body>
 </html>
+
 
 
