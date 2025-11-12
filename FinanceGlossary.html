@@ -1,232 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credit and Finance Glossary</title>
-    <link rel="stylesheet" href="captaincredit.css">
-    <style>
-        body {
-            background-image: url('images/GoldPathWorldMap.jpeg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            padding: 2rem;
-            color: #f5f5f5;
-            font-family: sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Credit and Finance Glossary</title>
+<link rel="stylesheet" href="captaincredit.css">
+<style>
+body {
+    background-image: url('images/GoldPathWorldMap.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 2rem;
+    color: #f5f5f5;
+    font-family: 'Comic Neue', sans-serif;
+}
 
-        h1 {
-            text-align: center;
-            margin-bottom: 2rem;
-            color: #00ff80;
-            text-shadow: 0 0 6px #000;
-        }
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #00ff80;
+    text-shadow: 0 0 6px #000;
+}
 
-        dl {
-            max-width: 1000px;
-            margin: 0 auto;
-            background-color: rgba(0,0,0,0.6);
-            padding: 2rem;
-            border-radius: 12px;
-        }
+/* Glossary styling */
+dl {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.6);
+    padding: 2rem;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 2rem;
+    row-gap: 1.25rem;
+    align-items: start;
+}
 
-        .glossary-item {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 1.5rem;
-        }
+dt {
+    font-weight: bold;
+    color: #00ff80;
+    text-align: left;
+    padding-top: 0.25rem;
+}
 
-        .glossary-item dt {
-            flex: 0 0 200px; /* fixed width for terms */
-            font-weight: bold;
-        }
+dd {
+    margin: 0;
+    color: #c0ffd5;
+    text-align: left;
+    line-height: 1.5;
+}
 
-        .glossary-item dd {
-            flex: 1 1 0; /* fill remaining space for definition */
-            margin: 0;
-        }
+/* Entry separator */
+dl dt::after {
+    content: ":";
+    color: #00ff80;
+    padding-right: 0.25rem;
+}
 
-        footer {
-            text-align: center;
-            margin-top: 3rem;
-        }
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    dl {
+        grid-template-columns: 1fr;
+        gap: 0.5rem 0;
+    }
+    dt {
+        margin-top: 1rem;
+    }
+}
 
-        footer a {
-            color: #00ff80;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+}
 
-        footer a:hover {
-            text-decoration: underline;
-        }
+footer a {
+    color: #00ff80;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        /* Responsive for mobile */
-        @media (max-width: 768px) {
-            .glossary-item {
-                flex-direction: column;
-            }
-            .glossary-item dt {
-                margin-bottom: 0.5rem;
-            }
-        }
-    </style>
+footer a:hover {
+    text-decoration: underline;
+}
+</style>
 </head>
 <body>
-    <h1>(Mostly!) AI Generated! Credit and Finance Glossary</h1>
-    <dl>
-        <div class="glossary-item">
-            <dt>APR (Annual Percentage Rate)</dt>
-            <dd>The yearly interest rate charged on borrowed money, like when you use a credit card or take out a loan.</dd>
-        </div>
 
-        <div class="glossary-item">
-            <dt>Asset</dt>
-            <dd>Anything valuable that you own, like cash, a car, a house, or even intellectual property.</dd>
-        </div>
+<h1>(Mostly!) AI Generated! Credit and Finance Glossary</h1>
 
-        <div class="glossary-item">
-            <dt>Balance</dt>
-            <dd>The amount of money you have in an account, both positive or negative. Includes bank accounts and amounts owed on loans or credit cards.</dd>
-        </div>
+<dl>
+    <dt>APR (Annual Percentage Rate)</dt>
+    <dd>The yearly interest rate charged on borrowed money, like when you use a credit card or take out a loan.</dd>
 
-        <div class="glossary-item">
-            <dt>Bankruptcy</dt>
-            <dd>A legal process where a person or entity that cannot pay debts can get a fresh start, though it seriously affects credit.</dd>
-        </div>
+    <dt>Asset</dt>
+    <dd>Anything valuable that you own, like cash, a car, a house, or even intellectual property.</dd>
 
-        <div class="glossary-item">
-            <dt>Checks</dt>
-            <dd>A paper document issued by a bank account holder instructing the bank to pay a specific amount to a person or entity.</dd>
-        </div>
+    <dt>Balance</dt>
+    <dd>The amount of money you have in an account, both positive or negative. Includes bank accounts and amounts owed on loans or credit cards.</dd>
 
-        <div class="glossary-item">
-            <dt>Checking Account</dt>
-            <dd>A bank account used to receive and spend money daily, usually comes with a debit card and supports electronic payments.</dd>
-        </div>
+    <dt>Bankruptcy</dt>
+    <dd>A legal process where a person or entity that cannot pay debts can get a fresh start, though it seriously affects credit.</dd>
 
-        <div class="glossary-item">
-            <dt><a href="credit_basics.html">Credit Score</a></dt>
-            <dd>A number that shows how trustworthy you are at paying back money you borrow. Higher scores indicate better reliability to lenders.</dd>
-        </div>
+    <dt>Checks</dt>
+    <dd>A paper document issued by a bank account holder instructing the bank to pay a specific amount to a person or entity.</dd>
 
-        <div class="glossary-item">
-            <dt>Collateral</dt>
-            <dd>Something valuable you promise to a lender if you can't repay a loan, like a car or a house.</dd>
-        </div>
+    <dt>Checking Account</dt>
+    <dd>A bank account used to receive and spend money daily, usually comes with a debit card and supports electronic payments.</dd>
 
-        <div class="glossary-item">
-            <dt>Debt</dt>
-            <dd>Money you owe to someone else, such as a lender.</dd>
-        </div>
+    <dt><a href="credit_basics.html">Credit Score</a></dt>
+    <dd>A number that shows how trustworthy you are at paying back money you borrow. Higher scores indicate better reliability to lenders.</dd>
 
-        <div class="glossary-item">
-            <dt>Default</dt>
-            <dd>Failing to pay back a loan as agreed.</dd>
-        </div>
+    <dt>Collateral</dt>
+    <dd>Something valuable you promise to a lender if you can't repay a loan, like a car or a house.</dd>
 
-        <div class="glossary-item">
-            <dt>Equity</dt>
-            <dd>The value of an asset you own minus any money you still owe on it. Example: A $100,000 house with $50,000 owed has 50% equity.</dd>
-        </div>
+    <dt>Debt</dt>
+    <dd>Money you owe to someone else, such as a lender.</dd>
 
-        <div class="glossary-item">
-            <dt>Foreclosure</dt>
-            <dd>When a lender takes back a property because it is in default.</dd>
-        </div>
+    <dt>Default</dt>
+    <dd>Failing to pay back a loan as agreed.</dd>
 
-        <div class="glossary-item">
-            <dt>Fixed Rate</dt>
-            <dd>An interest rate that stays the same for the entire loan period.</dd>
-        </div>
+    <dt>Equity</dt>
+    <dd>The value of an asset you own minus any money you still owe on it. Example: A $100,000 house with $50,000 owed has 50% equity.</dd>
 
-        <div class="glossary-item">
-            <dt>Interest</dt>
-            <dd>The extra money you pay when borrowing or earn when saving.</dd>
-        </div>
+    <dt>Foreclosure</dt>
+    <dd>When a lender takes back a property because it is in default.</dd>
 
-        <div class="glossary-item">
-            <dt>Liability</dt>
-            <dd>Your legal responsibility for a debt or obligation.</dd>
-        </div>
+    <dt>Fixed Rate</dt>
+    <dd>An interest rate that stays the same for the entire loan period.</dd>
 
-        <div class="glossary-item">
-            <dt>Loan</dt>
-            <dd>Money borrowed that must be paid back, usually with interest.</dd>
-        </div>
+    <dt>Interest</dt>
+    <dd>The extra money you pay when borrowing or earn when saving.</dd>
 
-        <div class="glossary-item">
-            <dt>Mortgage</dt>
-            <dd>A loan specifically for buying a house or real estate, where the property itself is collateral.</dd>
-        </div>
+    <dt>Liability</dt>
+    <dd>Your legal responsibility for a debt or obligation.</dd>
 
-        <div class="glossary-item">
-            <dt>Principal</dt>
-            <dd>The original amount of money borrowed or invested, not including interest or fees.</dd>
-        </div>
+    <dt>Loan</dt>
+    <dd>Money borrowed that must be paid back, usually with interest.</dd>
 
-        <div class="glossary-item">
-            <dt>Profit</dt>
-            <dd>The value remaining after subtracting all costs from a transaction.</dd>
-        </div>
+    <dt>Mortgage</dt>
+    <dd>A loan specifically for buying a house or real estate, where the property itself is collateral.</dd>
 
-        <div class="glossary-item">
-            <dt>Refinance</dt>
-            <dd>Getting a new loan to replace an old one, usually for a better interest rate.</dd>
-        </div>
+    <dt>Principal</dt>
+    <dd>The original amount of money borrowed or invested, not including interest or fees.</dd>
 
-        <div class="glossary-item">
-            <dt>Repossession</dt>
-            <dd>When a lender seizes collateral on a loan.</dd>
-        </div>
+    <dt>Profit</dt>
+    <dd>The value remaining after subtracting all costs from a transaction.</dd>
 
-        <div class="glossary-item">
-            <dt>Risk</dt>
-            <dd>The chance you might lose value on an investment.</dd>
-        </div>
+    <dt>Refinance</dt>
+    <dd>Getting a new loan to replace an old one, usually for a better interest rate.</dd>
 
-        <div class="glossary-item">
-            <dt>Savings Account</dt>
-            <dd>A bank account where money is stored long-term and typically earns interest.</dd>
-        </div>
+    <dt>Repossession</dt>
+    <dd>When a lender seizes collateral on a loan.</dd>
 
-        <div class="glossary-item">
-            <dt>Stock</dt>
-            <dd>A share in ownership of a company, which can increase or decrease in value.</dd>
-        </div>
+    <dt>Risk</dt>
+    <dd>The chance you might lose value on an investment.</dd>
 
-        <div class="glossary-item">
-            <dt>Term</dt>
-            <dd>The length of time an account or agreement lasts, such as a loan repayment period.</dd>
-        </div>
+    <dt>Savings Account</dt>
+    <dd>A bank account where money is stored long-term and typically earns interest.</dd>
 
-        <div class="glossary-item">
-            <dt>Transaction</dt>
-            <dd>Any exchange of value, such as buying something or receiving payment for work.</dd>
-        </div>
+    <dt>Stock</dt>
+    <dd>A share in ownership of a company, which can increase or decrease in value.</dd>
 
-        <div class="glossary-item">
-            <dt>Unsecured Loan</dt>
-            <dd>A loan without collateral, usually with higher interest because it is riskier for the lender.</dd>
-        </div>
+    <dt>Term</dt>
+    <dd>The length of time an account or agreement lasts, such as a loan repayment period.</dd>
 
-        <div class="glossary-item">
-            <dt>Variable Rate</dt>
-            <dd>An interest rate that changes over time, usually based on the economy.</dd>
-        </div>
+    <dt>Transaction</dt>
+    <dd>Any exchange of value, such as buying something or receiving payment for work.</dd>
 
-        <div class="glossary-item">
-            <dt>Withdrawal</dt>
-            <dd>Taking money or value out of an account.</dd>
-        </div>
-    </dl>
+    <dt>Unsecured Loan</dt>
+    <dd>A loan without collateral, usually with higher interest because it is riskier for the lender.</dd>
 
-    <footer>
-        <p>© 2025 Financialverse.com All rights reserved.</p>
-     
+    <dt>Variable Rate</dt>
+    <dd>An interest rate that changes over time, usually based on the economy.</dd>
 
-    </footer>
+    <dt>Withdrawal</dt>
+    <dd>Taking money or value out of an account.</dd>
+</dl>
+
+<footer>
+    <p><a href="IronBanker.html">Visit The Iron Banker</a></p>
+    <p>© 2025 Financialverse.com All rights reserved.</p>
+</footer>
+
 </body>
 </html>
+
 
