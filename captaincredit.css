@@ -1,15 +1,17 @@
 /* captaincredit.css — Hero Page Styles for Captain Credit */
 
+/* RESET */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* BODY */
 body {
   font-family: 'Comic Neue', sans-serif;
   background-color: #000;
-  color: #f5f5f5;
+  color: #e8ffe8;
   line-height: 1.6;
   text-align: center;
   padding: 0 1rem;
@@ -17,23 +19,27 @@ body {
 
 /* HEADER */
 .hero-header {
-  background: linear-gradient(180deg, #00132a 0%, #000 100%);
+  background: linear-gradient(180deg, #001a00 0%, #000 100%);
   padding: 2.5rem 1rem;
-  text-align: center;
+  border-bottom: 3px solid #00ff80;
+  box-shadow: 0 0 20px rgba(0, 255, 128, 0.4);
 }
 
 .hero-title {
-  font-family: 'Luckiest Guy', cursive;
-  color: #00bfff;
-  font-size: 3rem;
-  text-shadow: 0 0 8px #00bfff, 0 0 20px #005f99;
+  font-family: 'Bangers', cursive;
+  color: #00ff80;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px #00ff80, 0 0 20px #007a33;
 }
 
-.hero-header .tagline {
-  font-family: 'Baloo 2', cursive;
-  color: #88ddff;
+.tagline {
+  font-family: 'Comic Neue', sans-serif;
+  color: #baffd9;
   font-size: 1.25rem;
   margin-top: 0.5rem;
+  text-shadow: 0 0 6px #00ff80;
 }
 
 /* MAIN CONTENT */
@@ -43,61 +49,44 @@ main {
   padding: 0 1rem;
 }
 
-section {
-  margin-bottom: 3rem;
-}
-
-.hero-image {
-  display: block;
-  margin: 1.5rem auto;
-  width: 100%;
-  max-width: 450px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 191, 255, 0.6);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hero-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(0, 191, 255, 0.8);
-}
-
-.highlight {
-  color: #00d4ff;
-  font-weight: bold;
-  text-shadow: 0 0 6px #00bfff;
-}
-
-/* CONTENT STYLING */
 .content {
-  background-color: #0a1a2b;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 191, 255, 0.4);
+  background-color: #0b1a0f;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 255, 128, 0.4);
   text-align: left;
-  color: #c0eaff;
+  color: #c0ffd5;
 }
 
 .content h2 {
-  color: #00bfff;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-family: 'Bangers', cursive;
+  color: #00ff80;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px #00ff80;
 }
 
 .content p {
-  font-size: 1rem;
+  font-size: 1.05rem;
   margin-bottom: 1rem;
 }
 
-/* LIST STYLING */
-.knowledge-list {
-  list-style: none;
-  padding-left: 0;
+/* IMAGES */
+.hero-img {
+  display: block;
+  margin: 1.5rem auto;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 128, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.knowledge-list li {
-  margin-bottom: 1rem;
-  font-size: 1rem;
+.hero-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 255, 128, 0.8);
 }
 
 /* BUTTONS */
@@ -105,68 +94,77 @@ section {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 24px;
+  margin-top: 30px;
   flex-wrap: wrap;
 }
 
 .btn {
   display: inline-block;
-  font-family: 'Baloo 2', cursive;
-  font-weight: 700;
+  font-family: 'Bangers', cursive;
+  font-size: 1.1rem;
   text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 12px 24px;
+  border-radius: 12px;
   letter-spacing: 1px;
   transition: all 0.25s ease;
   text-align: center;
   cursor: pointer;
+  border: none;
 }
 
+/* Green “Hero” Buttons */
 .btn-hero {
-  background-color: #00bfff;
-  color: #1a1a1a;
-  box-shadow: 0 4px 10px rgba(0, 191, 255, 0.4);
+  background-color: #00ff80;
+  color: #111;
+  box-shadow: 0 4px 12px rgba(0, 255, 128, 0.4);
 }
 
 .btn-hero:hover {
-  background-color: #00d4ff;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0, 191, 255, 0.6);
+  background-color: #00ffaa;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 255, 128, 0.6);
 }
 
+/* Red “Alert” Buttons */
 .btn-alert {
   background-color: #ff004f;
   color: #fff;
-  box-shadow: 0 4px 10px rgba(255, 0, 79, 0.4);
+  box-shadow: 0 4px 12px rgba(255, 0, 79, 0.4);
 }
 
 .btn-alert:hover {
   background-color: #ff3366;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(255, 0, 79, 0.6);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(255, 0, 79, 0.6);
 }
 
-/* FOOTER */
+/* FOOTER (OPTIONAL SUPPORT) */
 footer {
   background-color: #0a0a0a;
   padding: 1rem;
   font-size: 0.9rem;
   color: #888;
   text-align: center;
-  border-top: 1px solid rgba(0, 191, 255, 0.2);
+  border-top: 1px solid rgba(0, 255, 128, 0.2);
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
-  .hero-header .tagline {
+  .tagline {
     font-size: 1rem;
   }
 
   .content {
-    padding: 16px;
+    padding: 1.25rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 18px;
   }
 }
+
