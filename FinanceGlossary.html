@@ -17,6 +17,8 @@
         h1 {
             text-align: center;
             margin-bottom: 2rem;
+            color: #00ff80;
+            text-shadow: 0 0 6px #000;
         }
 
         dl {
@@ -29,6 +31,8 @@
             padding: 2rem;
             border-radius: 12px;
             color: #f5f5f5;
+            font-size: 1rem;
+            line-height: 1.6;
         }
 
         dt {
@@ -55,98 +59,124 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* Responsive for phones */
+        @media (max-width: 768px) {
+            dl {
+                grid-template-columns: 1fr;
+                background-color: rgba(0,0,0,0.85);
+                padding: 1.5rem;
+                font-size: 1.15rem;
+            }
+
+            dt {
+                margin-top: 1rem;
+            }
+
+            dd {
+                margin-bottom: 1.5rem;
+            }
+
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
     </style>
 </head>
+
 <body>
     <h1>(Mostly!) AI Generated! Credit and Finance Glossary</h1>
-
     <dl>
         <dt>APR (Annual Percentage Rate)</dt>
         <dd>The yearly interest rate charged on borrowed money, like when you use a credit card or take out a loan.</dd>
 
         <dt>Asset</dt>
-        <dd>Anything valuable that you own, like cash, a car, a house, or intellectual property.</dd>
+        <dd>Anything valuable that you own, like cash, a car, a house, or even intellectual property.</dd>
 
         <dt>Balance</dt>
-        <dd>The amount of money you have in an account, positive or negative. Includes bank accounts and amounts owed on loans or credit cards.</dd>
+        <dd>The amount of money you have in an account of some kind, both positive or negative. Such as the amount of money in your bank account and the amount you owe on a loan or credit card.</dd>
 
         <dt>Bankruptcy</dt>
-        <dd>A legal process allowing someone who can’t pay their debts to get a fresh start, but it seriously affects credit.</dd>
+        <dd>A legal process where a legal entity that can't pay their debts can get a fresh start, but it can seriously affect their credit.</dd>
 
         <dt>Checks</dt>
-        <dd>A paper document issued by a bank account holder instructing the bank to pay a specific amount to the payee. Includes date, payee, amount, and signature.</dd>
+        <dd>A physical check is a paper document issued by a bank account holder that instructs the bank to pay a specific amount of money to the person or entity named on the check. It includes details such as the date, payee’s name, amount, and the account holder’s signature.</dd>
 
         <dt>Checking Account</dt>
-        <dd>A bank account used for daily transactions, often linked to a debit card and electronic direct deposit.</dd>
+        <dd>A bank account that is used to receive and spend money on a daily basis. This is the account that usually gives you a debit card and is used to get paid and spend money from. Most people will have electronic Direct Deposit payments, but in days past this is the account you would cash and write checks from.</dd>
 
         <dt><a href="credit_basics.html">Credit Score</a></dt>
-        <dd>A number that shows how trustworthy you are at paying back borrowed money. Higher scores mean better creditworthiness.</dd>
+        <dd>A number that shows how good you are at paying back money you borrow. Higher scores mean you're more trustworthy to lenders.</dd>
 
         <dt>Collateral</dt>
-        <dd>Something valuable promised to a lender if you can’t repay a loan, like a car or house.</dd>
+        <dd>Something valuable you promise to give a lender if you can't pay back a loan, like your car or house.</dd>
 
         <dt>Debt</dt>
-        <dd>Money you owe to someone else, such as a lender.</dd>
+        <dd>Money you owe to someone else, like a lender.</dd>
 
         <dt>Default</dt>
-        <dd>Failing to repay a loan as agreed.</dd>
+        <dd>Failing to pay back a loan as agreed.</dd>
 
         <dt>Equity</dt>
-        <dd>The value of an asset you own minus any debt owed on it. Example: a $100,000 house with $50,000 owed has 50% equity.</dd>
+        <dd>The value of an asset you own, minus any money you still owe on it. Example: Your asset is valued at $100,000 but you have a debt on it of $50,000. In this example, you have 50% equity.</dd>
 
         <dt>Foreclosure</dt>
-        <dd>When a lender takes back property due to default.</dd>
+        <dd>When a lender takes back a property because it is in default in some way.</dd>
 
         <dt>Fixed Rate</dt>
-        <dd>An interest rate that stays the same over the loan term.</dd>
+        <dd>An interest rate that stays the same for the entire loan period regardless of market fluctuations.</dd>
 
         <dt>Interest</dt>
-        <dd>Extra money you pay when borrowing or earn when saving money.</dd>
+        <dd>The extra money you pay when you borrow money, or the extra money you earn when you save money in a bank.</dd>
 
         <dt>Liability</dt>
-        <dd>Your legal responsibility to repay debt or cover financial obligations.</dd>
+        <dd>Your amount and risk of legal responsibility. It may also refer to the money you owe on a specific debt like loans or credit card debt.</dd>
 
         <dt>Loan</dt>
-        <dd>Money borrowed that must be repaid, usually with interest.</dd>
+        <dd>Money you borrow that you have to pay back, usually with interest.</dd>
 
         <dt>Mortgage</dt>
-        <dd>A loan specifically for buying property, where the property is collateral.</dd>
+        <dd>A loan specifically for buying a house or real estate, where the property itself is the collateral.</dd>
 
         <dt>Principal</dt>
-        <dd>The original amount borrowed or invested, excluding interest or fees.</dd>
+        <dd>The original amount of money you borrow or invest, not including interest or usually fees.</dd>
 
         <dt>Profit</dt>
-        <dd>The amount left after subtracting all costs from revenue.</dd>
+        <dd>The value left over after subtracting all of your costs from a transaction.</dd>
 
         <dt>Refinance</dt>
-        <dd>Replacing an existing loan with a new one, usually for a better rate.</dd>
+        <dd>Getting a new loan to replace an old one, usually to get a better interest rate.</dd>
 
         <dt>Repossession</dt>
-        <dd>When a lender seizes collateral on a loan.</dd>
+        <dd>When a lender seizes the collateral on a loan.</dd>
 
         <dt>Risk</dt>
-        <dd>The chance of losing value on an investment or asset.</dd>
+        <dd>The chance that you might lose the value on any type of investment.</dd>
 
         <dt>Savings Account</dt>
-        <dd>A bank account to store money and earn interest, intended for longer-term saving.</dd>
+        <dd>A bank account where you can store money and typically earn a little interest. The idea is to leave the money untouched for a longer period of time so that it accumulates.</dd>
 
         <dt>Stock</dt>
-        <dd>A share in ownership of a company, which can increase or decrease in value.</dd>
+        <dd>A share in the ownership of a company, which can go up or down in value.</dd>
 
         <dt>Term</dt>
-        <dd>The length of time an account or loan lasts.</dd>
+        <dd>The length of time an account or agreement will last, such as the time you have to pay back a loan.</dd>
 
         <dt>Transaction</dt>
-        <dd>Any exchange of value, like buying or selling goods or services.</dd>
+        <dd>Any activity involving the exchange of something of perceived value for something else, like buying something or getting paid for work.</dd>
 
         <dt>Unsecured Loan</dt>
-        <dd>A loan without collateral, often with higher interest due to greater risk for the lender.</dd>
+        <dd>A loan that doesn't require collateral, but usually has a higher interest rate because it's riskier for the lender.</dd>
 
         <dt>Variable Rate</dt>
-        <dd>An interest rate that can change over time based on market conditions.</dd>
+        <dd>An interest rate that changes over time, usually based on the economy.</dd>
 
         <dt>Withdrawal</dt>
-        <dd>Removing value from an account.</dd>
+        <dd>Taking value out of an account.</dd>
     </dl>
 
     <footer>
@@ -155,4 +185,3 @@
     </footer>
 </body>
 </html>
-
