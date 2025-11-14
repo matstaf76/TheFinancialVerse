@@ -2,10 +2,15 @@
    Mobile-first, responsive, cinematic style
 */
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  font-family: "Bangers", "Permanent Marker", sans-serif;
+  /* Primary reading/display font: Permanent Marker (handwritten, bold) */
+  font-family: "Permanent Marker", "Bangers", sans-serif;
   background: #000;
   color: #f2f2f2;
   line-height: 1.6;
@@ -21,14 +26,18 @@ body {
   text-align: center;
 }
 
-.villain-header h1 {
-  font-family: "Permanent Marker", cursive;
+/* Villain title: use Nosifer for dramatic, dripping effect */
+.villain-header h1,
+.villain-title {
+  font-family: "Nosifer", "Permanent Marker", cursive;
   color: #ff3030;
   font-size: 2.5rem;
   text-shadow: 0 0 10px #ff0000, 0 0 25px #ff3030;
+  margin: 0;
 }
 
 .villain-header .tagline {
+  /* Tagline uses the playful comic-style Bangers */
   color: #ffd580;
   font-family: "Bangers", cursive;
   margin-top: 0.5rem;
@@ -46,17 +55,20 @@ section {
   margin-bottom: 3rem;
 }
 
+/* Section headings use Bangers for punchy look */
 h2 {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Bangers", "Permanent Marker", cursive;
   color: #ff4040;
   margin-bottom: 1rem;
   text-shadow: 0 0 6px #ff4040;
 }
 
+/* Body paragraphs stay in Permanent Marker for consistency/readability */
 p {
   font-size: 1rem;
   margin: 1rem 0;
   color: #ddd;
+  font-family: "Permanent Marker", sans-serif;
 }
 
 /* ===== Images ===== */
@@ -81,24 +93,29 @@ p {
   color: #ff8080;
   font-weight: bold;
   font-size: 1.1em;
+  font-family: "Permanent Marker", sans-serif;
 }
 
 /* ===== Buttons ===== */
 .button-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 1rem;
   margin: 3rem auto 2rem;
+  width: 100%;
   text-align: center;
 }
 
 .btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
+  display: block;
+  width: 90%;
+  max-width: 300px;
+  text-align: center;
+  padding: 0.85rem 1.5rem;
   font-family: "Bangers", cursive;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   border: none;
   border-radius: 10px;
   text-decoration: none;
@@ -117,7 +134,7 @@ p {
 .btn-evil:hover {
   background: linear-gradient(90deg, #ff6600, #ff3030);
   box-shadow: 0 0 25px rgba(255, 80, 0, 0.8);
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 /* Heroic green button */
@@ -130,9 +147,8 @@ p {
 .btn-hero:hover {
   background: linear-gradient(90deg, #66ff66, #00b33c);
   box-shadow: 0 0 25px rgba(0, 255, 80, 0.8);
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
-
 
 /* ===== Footer ===== */
 footer {
@@ -144,12 +160,13 @@ footer {
 }
 
 /* ===== Responsive Design ===== */
-
 /* Tablets */
 @media (min-width: 600px) {
   body { font-size: 1.05rem; }
   .villain-header h1 { font-size: 3rem; }
   .villain-image { max-width: 500px; }
+  .button-container { flex-direction: row; }
+  .btn { width: auto; }
 }
 
 /* Desktops */
@@ -159,3 +176,5 @@ footer {
   main { padding: 3rem 0; }
   .btn { font-size: 1.25rem; }
 }
+
+
