@@ -1,0 +1,59 @@
+/* ===== Social Links (YouTube / TikTok) ===== */
+/* Shared across TheFinancialVerse pages. Sits inside existing dark footers. */
+
+.fv-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.fv-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  color: #ddd;
+  font-size: 0.85rem;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.fv-social a:hover,
+.fv-social a:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.fv-social svg {
+  width: 1.1em;
+  height: 1.1em;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .fv-social {
+    gap: 0.5rem;
+  }
+  .fv-social a {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* TikTok creator embed wrapper (homepage media section only) */
+.fv-tiktok-embed {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  overflow-x: auto;
+}
