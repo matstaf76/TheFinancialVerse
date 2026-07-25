@@ -57,3 +57,18 @@
   margin-top: 1rem;
   overflow-x: auto;
 }
+
+/* YouTube Shorts embed wrapper (character pages) */
+.fv-short-embed {
+  width: 100%;
+  max-width: 360px;
+  margin: 1.5rem auto;
+}
+
+.fv-short-embed iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border: 0;
+  border-radius: 10px;
+}
