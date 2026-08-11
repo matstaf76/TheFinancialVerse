@@ -1,0 +1,102 @@
+<div id="debt-call-tree">
+  <style>
+    #debt-call-tree { width: 100%; color: var(--foreground); }
+    #debt-call-tree .tree-stack { display: grid; gap: 14px; }
+    #debt-call-tree .flow-step { display: grid; gap: 8px; }
+    #debt-call-tree .arrow { text-align: center; color: var(--muted-foreground); }
+    #debt-call-tree .objections { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    #debt-call-tree .script { white-space: pre-line; }
+    #debt-call-tree .finish { border-top: 1px solid var(--border); padding-top: 12px; }
+    @media (max-width: 520px) {
+      #debt-call-tree .objections { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <div class="tree-stack">
+    <h1>Debt Collector Phone Tree</h1>
+
+    <section class="card flow-step" aria-labelledby="opening-label">
+      <h2 id="opening-label">1. Unknown caller asks for someone</h2>
+      <p><strong>Caller:</strong> “Can I speak with [name]?”</p>
+      <p class="script"><strong>You:</strong> “Who are you, what company do you represent, and what is the purpose of this call?”</p>
+    </section>
+
+    <div class="arrow" aria-hidden="true">↓</div>
+
+    <section class="flow-step" aria-labelledby="objection-label">
+      <h2 id="objection-label">2. Choose what the caller says</h2>
+      <div class="objections" role="group" aria-label="Caller objections">
+        <button class="btn btn-block btn-primary" type="button" data-case="verify" aria-pressed="true">“I must verify you first.”</button>
+        <button class="btn btn-block" type="button" data-case="address" aria-pressed="false">“Can I verify your address?”</button>
+        <button class="btn btn-block" type="button" data-case="noaddress" aria-pressed="false">“I can’t give our address.”</button>
+        <button class="btn btn-block" type="button" data-case="pay" aria-pressed="false">“You must pay today.”</button>
+        <button class="btn btn-block" type="button" data-case="threat" aria-pressed="false">They threaten or become abusive.</button>
+        <button class="btn btn-block" type="button" data-case="mail" aria-pressed="false">They agree to mail information.</button>
+      </div>
+    </section>
+
+    <div class="arrow" aria-hidden="true">↓</div>
+
+    <section class="card flow-step" aria-live="polite" aria-labelledby="response-label">
+      <h2 id="response-label">3. Your response</h2>
+      <p id="case-response" class="script"><strong>You:</strong> “I do not provide information to unsolicited callers. Give me your name, your company’s full legal name, mailing address, telephone number, and license number. I am not verifying anything for you.”</p>
+      <p id="case-action" class="text-muted">If they refuse to identify the business, end the call and document the refusal.</p>
+    </section>
+
+    <div class="arrow" aria-hidden="true">↓</div>
+
+    <section class="flow-step finish" aria-labelledby="finish-label">
+      <h2 id="finish-label">4. After the call</h2>
+      <p>Record the date, time, telephone number, caller’s name, company, address, and exact statements.</p>
+      <p>When written notice arrives, preserve it and dispute the claim in writing by trackable mail.</p>
+      <p><strong>Never ignore genuine court papers.</strong></p>
+    </section>
+  </div>
+
+  <script>
+    (() => {
+      const root = document.getElementById('debt-call-tree');
+      const response = root.querySelector('#case-response');
+      const action = root.querySelector('#case-action');
+      const cases = {
+        verify: {
+          response: '<strong>You:</strong> “I do not provide information to unsolicited callers. Give me your name, your company’s full legal name, mailing address, telephone number, and license number. I am not verifying anything for you.”',
+          action: 'If they refuse to identify the business, end the call and document the refusal.'
+        },
+        address: {
+          response: '<strong>You:</strong> “No. Use the address already in your records, just as you used the telephone number in your records. Send every required notice there by United States mail.”',
+          action: 'Do not confirm, correct, or supply an address during the call.'
+        },
+        noaddress: {
+          response: '<strong>You:</strong> “You called me. I am not verifying anything for you. Provide your business mailing address now and do not ask me another question.”',
+          action: 'If they still refuse: “This call is over. Do not call again.” Hang up and document the refusal.'
+        },
+        pay: {
+          response: '<strong>You:</strong> “I acknowledge no debt and make no promise to pay. Send the claim and all supporting information in writing.”',
+          action: 'Do not discuss payment, settlement, or your finances by telephone.'
+        },
+        threat: {
+          response: '<strong>You:</strong> “I am documenting your exact words. All further communication must be in writing.”',
+          action: 'End the call. Preserve the number, time, voicemail, and exact language used.'
+        },
+        mail: {
+          response: '<strong>You:</strong> “I acknowledge no debt and make no promise to pay. Do not contact me by telephone again. Send the validation information by mail.”',
+          action: 'End the call. Review the written notice before taking any other action.'
+        }
+      };
+
+      root.querySelectorAll('[data-case]').forEach((button) => {
+        button.addEventListener('click', () => {
+          root.querySelectorAll('[data-case]').forEach((item) => {
+            const selected = item === button;
+            item.setAttribute('aria-pressed', String(selected));
+            item.classList.toggle('btn-primary', selected);
+          });
+          const selectedCase = cases[button.dataset.case];
+          response.innerHTML = selectedCase.response;
+          action.textContent = selectedCase.action;
+        });
+      });
+    })();
+  </script>
+</div>
