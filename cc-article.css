@@ -126,3 +126,8 @@ a.kit-btn:hover {
 .hq-groups h2 {
   margin-top: 1.75rem;
 }
+
+/* Readable text on green hero buttons (overrides the article link color) */
+.cc-article a.btn, .cc-article a.btn-hero, a.btn.btn-hero { color: #111 !important; }
+.cc-article a.btn-alert, a.btn.btn-alert { color: #fff !important; }
+
