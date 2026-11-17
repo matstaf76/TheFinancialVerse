@@ -1,0 +1,128 @@
+/* Helper styles for Captain Credit educational guides and the letter-kit page. */
+
+.cc-article {
+  text-align: left;
+}
+
+.cc-article h2 {
+  font-family: 'Bangers', cursive;
+  color: #00ff80;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.3rem, 4vw, 1.7rem);
+  letter-spacing: 1px;
+  text-align: left;
+  text-shadow: 0 0 6px #00ff80;
+}
+
+.cc-article h3 {
+  color: #69f0ae;
+  margin-top: 1.1rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.15rem;
+}
+
+.cc-article ul,
+.cc-article ol {
+  margin: 0 0 1rem 1.3rem;
+}
+
+.cc-article li {
+  margin-bottom: 0.4rem;
+}
+
+.cc-article a {
+  color: #69f0ae;
+}
+
+.cc-toc {
+  background: #07180d;
+  border: 1px solid #00ff80;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.cc-toc ol {
+  margin: 0.4rem 0 0 1.2rem;
+}
+
+.template-box {
+  white-space: pre-wrap;
+  font-family: "Times New Roman", Times, serif;
+  background: #f7f7f0;
+  color: #111;
+  padding: 1.25rem;
+  border: 1px solid #9aaa9a;
+  border-radius: 6px;
+  text-align: left;
+  overflow-x: auto;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.callout {
+  background: #132616;
+  border-left: 4px solid #00ff80;
+  padding: 1rem;
+  margin: 1.25rem 0;
+}
+
+.kit-cta {
+  background: #1b5e20;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  padding: 24px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.kit-cta h3,
+.kit-cta .kit-cta-title {
+  color: #69f0ae;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.kit-cta p {
+  color: #c8e6c9;
+}
+
+.kit-cta a.kit-btn,
+a.kit-btn {
+  display: inline-block;
+  background: #69f0ae;
+  color: #0a1f0a !important;
+  font-weight: bold;
+  padding: 13px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0.4rem 0.3rem;
+}
+
+.kit-cta a.kit-btn:hover,
+a.kit-btn:hover {
+  background: #b9f6ca;
+}
+
+.cc-disclaimer {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #a5d6a7;
+  margin-top: 1rem;
+}
+
+.lesson-list {
+  list-style: none;
+  margin: 0 0 1.25rem 0;
+  padding: 0;
+}
+
+.lesson-list li {
+  margin-bottom: 12px;
+}
+
+.hq-groups h2 {
+  margin-top: 1.75rem;
+}
